@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ViewMemberController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#5284ac" height="279.0" layoutX="37.0" layoutY="51.0" stroke="BLACK" strokeType="INSIDE" width="539.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#090909" height="35.0" layoutX="210.0" layoutY="22.0" stroke="BLACK" strokeType="INSIDE" width="180.0" />
+      <Label layoutX="266.0" layoutY="21.0" text="View" textFill="#ededed">
+         <font>
+            <Font name="Baskerville Old Face" size="29.0" />
+         </font>
+      </Label>
+      <Button layoutX="193.0" layoutY="185.0" mnemonicParsing="false" onAction="#specificItems" prefHeight="29.0" prefWidth="214.0" text="Specific Types Of Item">
+         <font>
+            <Font name="Baskerville Old Face" size="15.0" />
+         </font>
+      </Button>
+      <Button layoutX="193.0" layoutY="228.0" mnemonicParsing="false" onAction="#AllItems" prefHeight="29.0" prefWidth="214.0" text="All Items">
+         <font>
+            <Font name="Baskerville Old Face" size="15.0" />
+         </font>
+      </Button>
+      <Button layoutX="35.0" layoutY="342.0" mnemonicParsing="false" onAction="#MemberMenu" prefHeight="29.0" prefWidth="161.0" text="Back">
+         <font>
+            <Font name="Baskerville Old Face" size="15.0" />
+         </font>
+      </Button>
+      <Button layoutX="426.0" layoutY="342.0" mnemonicParsing="false" onAction="#Hompage" prefHeight="29.0" prefWidth="150.0" text="Go to Homepage" textFill="#262626">
+         <font>
+            <Font name="Baskerville Old Face" size="15.0" />
+         </font>
+      </Button>
+      <Button layoutX="193.0" layoutY="143.0" mnemonicParsing="false" onAction="#checkStatus" prefHeight="29.0" prefWidth="214.0" text="CheckOut Status">
+         <font>
+            <Font name="Baskerville Old Face" size="15.0" />
+         </font>
+      </Button>
+      <Label layoutX="175.0" layoutY="80.0" text="Item ID">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="msg" layoutX="146.0" layoutY="111.0" prefHeight="23.0" prefWidth="395.0" textFill="#fff6f6" />
+      <TextField fx:id="itemidtf" layoutX="249.0" layoutY="79.0" promptText="Enter ID" />
+   </children>
+</AnchorPane>
